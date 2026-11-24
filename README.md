@@ -1,4 +1,4 @@
-# caepe-remediations-demo-v2
+# caepe-remediation-demo-v2
 
 A manifests application for demonstrating CAEPE workload remediation on a Pod.
 
