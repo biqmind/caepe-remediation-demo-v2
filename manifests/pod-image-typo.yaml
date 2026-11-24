@@ -1,0 +1,17 @@
+# A pod that cannot start because its image name is misspelled.
+#
+# "ngnix" is a typo of "nginx". A workload scan reports the pod as unable to
+# pull its image and names the correct image in its fix, so a workload
+# remediation can change the image in place and the pod starts.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-image-typo
+  labels:
+    app: caepe-remediations-demo
+spec:
+  containers:
+    - name: web
+      image: ngnix:1.27-alpine
+      ports:
+        - containerPort: 80
