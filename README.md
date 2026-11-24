@@ -10,8 +10,7 @@ A manifests application for demonstrating CAEPE workload remediation on a Pod.
 
 1. Register this repository in CAEPE.
 2. Create a **Manifest** application from it with folder `manifests`, any
-   namespace, and **sync turned off** (with sync on, CAEPE would restore the
-   misspelled image after the fix).
+   namespace.
 3. Deploy the application to a cluster.
 4. Run a workload scan on that cluster. The pod is reported as unable to pull
    its image, with steps that name `nginx:1.27-alpine`.
