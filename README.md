@@ -17,4 +17,4 @@ A manifests application for demonstrating CAEPE workload remediation on a Pod.
 5. Trigger the workload remediation. The image is changed in place, the pod
    starts, and the run is recorded in the audit log.
 
-To run the demo again, delete the pod and redeploy the application.
+To run the demo again, delete the deployment and redeploy the application.
